@@ -35,6 +35,7 @@ done
 ################
 # Shell settings
 ################
+set -o vi
 export HISTFILE=/private/tmp/$USER.bash_history
 export PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '
 
