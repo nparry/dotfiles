@@ -4,6 +4,7 @@
 ################
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home"
 export GIT_HOME="/usr/local/git/git-1.7.1"
+export NODE_HOME="/usr/local/node/node-0.1.97"
 
 ##############################
 # Settings for common commands
