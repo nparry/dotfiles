@@ -14,6 +14,7 @@ export LESSHISTFILE=/private/tmp/$USER.lesshst
 export CLICOLOR=1
 
 alias ls="ls -F"
+alias ll="ls -Al"
 alias gvim="mvim"
 
 source $GIT_HOME/contrib/completion/git-completion.bash
@@ -38,5 +39,7 @@ done
 ################
 set -o vi
 export HISTFILE=/private/tmp/$USER.bash_history
-export PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '
+#export PS1='\u@\h:\W$(__git_ps1 "(%s)") ➡ '
+export PS1='\[\033[0;37m\]\u@\h:\W$(__git_ps1 "(\[\033[1;33m\]%s\[\033[0;37m\])") ➡ \[\033[0m\]'
+export SUDO_PS1='\[\033[1;31m\]\u@\h\[\033[0;37m\]:\W ★  \[\033[0m\]'
 
