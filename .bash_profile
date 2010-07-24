@@ -9,7 +9,7 @@ export NODE_HOME="/usr/local/node/node-0.1.97"
 ##############################
 # Settings for common commands
 ##############################
-export LESS="-iMS"
+export LESS="-iMSR"
 export LESSHISTFILE=/private/tmp/$USER.lesshst
 export CLICOLOR=1
 
