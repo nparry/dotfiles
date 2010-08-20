@@ -42,9 +42,7 @@ set wildmode=list:longest
 let mapleader = ","
 set listchars=tab:>-,trail:·,eol:$
 
-map <leader>b :FufBuffer<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader>f :FufFile<CR>
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 map <leader>p :set paste!<CR>
 nmap <silent> <leader>s :set nolist!<CR>
