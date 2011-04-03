@@ -10,6 +10,7 @@ export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Hom
 export LESS="-iMSR"
 export LESSHISTFILE=/private/tmp/$USER.lesshst
 export CLICOLOR=1
+export EDITOR="mvim -f"
 
 alias ls="ls -F"
 alias ll="ls -Al"

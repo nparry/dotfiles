@@ -1,0 +1,13 @@
+set background=dark
+color wombat256
+
+" move temp files to tmp (stored in ram, avoid ssd writes)
+set backupdir=/private/tmp
+set dir=/private/tmp
+
+let mapleader = ","
+
+nmap <silent> <leader>n :silent :nohlsearch<CR>
+map <leader>p :set paste!<CR>
+nmap <silent> <leader>s :set nolist!<CR>
+
