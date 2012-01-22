@@ -1,13 +1,16 @@
+let g:solarized_termcolors=256
+" set t_Co=16
 set background=dark
-color wombat256
+colorscheme solarized
 
 " move temp files to tmp (stored in ram, avoid ssd writes)
 set backupdir=/private/tmp
 set dir=/private/tmp
 
-let mapleader = ","
-
-nmap <silent> <leader>n :silent :nohlsearch<CR>
 map <leader>p :set paste!<CR>
 nmap <silent> <leader>s :set nolist!<CR>
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 

@@ -43,3 +43,5 @@ export HISTFILE=/private/tmp/$USER.bash_history
 export PS1='\[\033[0;37m\]\u@\h:\W$(__git_ps1 "(\[\033[1;33m\]%s\[\033[0;37m\])") ➡ \[\033[0m\]'
 export SUDO_PS1='\[\033[1;31m\]\u@\h\[\033[0;37m\]:\W ★  \[\033[0m\]'
 
+eval "$(rbenv init -)"
+
