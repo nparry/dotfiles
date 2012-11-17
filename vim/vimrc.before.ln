@@ -9,4 +9,6 @@ call janus#disable_plugin('snipmate')
 call janus#disable_plugin('snipmate-snippets')
 call janus#disable_plugin('syntastic')
 call janus#disable_plugin('vimwiki')
+call janus#disable_plugin('vroom')
+call janus#disable_plugin('webapi')
 
