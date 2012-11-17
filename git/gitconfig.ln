@@ -1,0 +1,34 @@
+[user]
+  name = Nathan Parry
+  email = nparry@gmail.com
+[include]
+    path = ~/.dotfiles/git/gitconfig.private
+[branch]
+  autosetupmerge = true
+[color]
+  ui = true
+[diff]
+  renames = true
+[merge]
+  tool = vim
+[mergetool "mvim"]
+  cmd=/usr/local/bin/mvim -d -g $LOCAL $MERGED $REMOTE
+  keepbackup=false
+[alias]
+  st = status
+  d = diff
+  dc = diff --cached
+  ci = commit
+  cia = commit -a
+  co = checkout
+  cp = cherry-pick
+  l = log
+  ll = log -p
+  lt = log trunk
+  llt = log -p trunk
+  lm = log master..
+  llm = log -p master
+  lgo = log --all --graph --oneline --decorate
+  b = branch
+  pr = pull --rebase
+
