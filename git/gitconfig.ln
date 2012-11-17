@@ -32,3 +32,5 @@
   b = branch
   pr = pull --rebase
 
+[push]
+	default = upstream
