@@ -1,5 +1,5 @@
 if which brew >/dev/null; then
-  export RBENV_ROOT=$(brew --prefix)/opt/rbenv
+  export RBENV_ROOT=$(brew --prefix)/var/lib/rbenv
 elif [ -d $HOME/.rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
 fi
