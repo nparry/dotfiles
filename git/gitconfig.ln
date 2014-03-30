@@ -1,8 +1,8 @@
 [user]
   name = Nathan Parry
   email = nparry@gmail.com
-[include]
-    path = ~/.dotfiles/git/gitconfig.private
+[credential]
+  helper = osxkeychain
 [branch]
   autosetupmerge = true
 [color]
