@@ -6,7 +6,7 @@ task :link do
 
     if File.exists?(link_file) && !File.symlink?(link_file)
       abort("File #{link_file} already exists")
-    elif File.symlink?(link_file)
+    elsif File.symlink?(link_file)
       FileUtils.rm(link_file)
     end
 
