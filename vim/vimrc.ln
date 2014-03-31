@@ -42,7 +42,16 @@ set background=light
 colorscheme solarized
 
 " Powerline
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+if filereadable("/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim")
+  source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+else
+  " Fallback to Janus style statusline if Powerline isn't available
+  set statusline=%f\ %m\ %r
+  set statusline+=Line:%l/%L[%p%%]
+  set statusline+=Col:%v
+  set statusline+=Buf:#%n
+  set statusline+=[%b][0x%B]
+endif
 
 " General appearance
 set nowrap

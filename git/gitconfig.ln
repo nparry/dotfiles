@@ -6,7 +6,7 @@
 [diff]
   renames = true
 [alias]
-  st = status
+  st = status --short
   dc = diff --cached
   co = checkout
   cp = cherry-pick
