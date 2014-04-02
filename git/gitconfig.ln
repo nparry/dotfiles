@@ -1,8 +1,6 @@
 [user]
   name = Nathan Parry
   email = nparry@gmail.com
-[credential]
-  helper = osxkeychain
 [diff]
   renames = true
 [alias]
@@ -12,5 +10,6 @@
   cp = cherry-pick
   lgo = log --all --graph --oneline --decorate
   pr = pull --rebase
-[push]
-  default = upstream
+[include]
+  path = ~/.gitconfig.platform
+
