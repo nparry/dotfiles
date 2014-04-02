@@ -80,7 +80,7 @@ set smartcase
 nmap <silent> <leader>s :set nolist!<CR>
 set grepprg=ack
 map <leader>f :Ack<space>
-map <leader>c :CtrlP<CR>
+map <leader>t :CtrlP<CR>
 
 " Ignore common stuff we don't care about
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
