@@ -12,6 +12,7 @@ Plugin 'gmarik/vundle'
 " My bundles
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ajf/puppet-vim'
 Plugin 'rosstimson/scala-vim-support'
