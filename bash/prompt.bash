@@ -1,4 +1,4 @@
-POWERLINE_CONFIG="/usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh"
+POWERLINE_CONFIG="$HOME/.dotfiles/bash/bash-powerline/bash-powerline.sh"
 if [ -f "$POWERLINE_CONFIG" ]; then
   source "$POWERLINE_CONFIG"
 else
