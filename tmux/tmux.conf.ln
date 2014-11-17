@@ -22,9 +22,6 @@ set-option -g message-fg colour16
 set-option -g message-bg colour221
 set-option -g message-attr bold
 
-# Powerline status bar (from http://www.drbunsen.org/text-triumvirate.html)
-if-shell 'test -f /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf' 'source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf'
-
 # Mouse control
 set-window-option -g mode-mouse on
 set-option -g mouse-select-pane on
