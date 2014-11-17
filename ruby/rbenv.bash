@@ -5,10 +5,6 @@ elif [ -d $HOME/.rbenv ]; then
 fi
 
 if which rbenv >/dev/null; then
-  # Fix Dreamhost strangeness
-  unset GEM_HOME
-  unset GEM_PATH
-
   # Strip system gem stuff from the path
   # http://stackoverflow.com/questions/370047/what-is-the-most-elegant-way-to-remove-a-path-from-the-path-variable-in-bash
   export PATH=$(
