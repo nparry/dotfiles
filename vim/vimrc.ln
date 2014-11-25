@@ -17,6 +17,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'ajf/puppet-vim'
 Plugin 'rosstimson/scala-vim-support'
+Plugin 'fatih/vim-go'
 
 Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
@@ -71,7 +72,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-nmap <silent> <leader>s :set nolist!<CR>
+nmap <silent> <leader>z :set nolist!<CR>
 set grepprg=ack
 map <leader>f :Ack<space>
 map <leader>t :CtrlP<CR>
