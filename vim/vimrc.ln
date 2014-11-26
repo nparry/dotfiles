@@ -72,7 +72,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-nmap <silent> <leader><space> :set nolist!<CR>
+nmap <silent> <leader><space> :nohlsearch<CR>
 set grepprg=ack
 map <leader>a :Ack<space>
 map <leader>f :CtrlP<CR>
