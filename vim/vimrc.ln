@@ -56,7 +56,7 @@ set laststatus=2
 set encoding=utf-8
 set cursorline
 set showmatch
-set list listchars=tab:>-,trail:. " Show trailing whitespace
+set list listchars=tab:▸\ ,trail:· " Show trailing whitespace
 
 " Tabs and such
 set shiftwidth=2
@@ -72,10 +72,10 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-nmap <silent> <leader>z :set nolist!<CR>
+nmap <silent> <leader><space> :set nolist!<CR>
 set grepprg=ack
-map <leader>f :Ack<space>
-map <leader>t :CtrlP<CR>
+map <leader>a :Ack<space>
+map <leader>f :CtrlP<CR>
 
 " Ignore common stuff we don't care about
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
@@ -99,6 +99,19 @@ map <leader>p :set paste!<CR>
 autocmd FileType make setlocal noexpandtab " Real tabs for makefiles
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4
+
+autocmd FileType go nmap <Leader>s <Plug>(go-implements)
+autocmd FileType go nmap <Leader>i <Plug>(go-info)
+autocmd FileType go nmap <Leader>d <Plug>(go-doc-vertical)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>t <Plug>(go-test)
+autocmd FileType go nmap <leader>c <Plug>(go-coverage)
+autocmd FileType go nmap <Leader>e <Plug>(go-rename)
+autocmd FileType go setlocal listchars=tab:\ \ ,trail:·
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
 
 " Git mappings
 nmap <leader>gb :Gblame<CR>
