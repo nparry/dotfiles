@@ -96,6 +96,7 @@ set clipboard=unnamed
 map <leader>p :set paste!<CR>
 
 " Filetype specific settings
+autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd FileType make setlocal noexpandtab " Real tabs for makefiles
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4
