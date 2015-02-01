@@ -92,7 +92,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Copy/paste
-set clipboard=unnamed
+" set clipboard=unnamed
 map <leader>p :set paste!<CR>
 
 " Filetype specific settings
