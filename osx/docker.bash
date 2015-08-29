@@ -1,4 +1,6 @@
-if which boot2docker >/dev/null; then
-  eval "$(boot2docker shellinit 2>/dev/null)"
+if which docker-machine >/dev/null; then
+  if [ $(docker-machine status dev) == 'Running' ]; then
+    eval "$(docker-machine env dev)"
+  fi
 fi
 
