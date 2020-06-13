@@ -10,6 +10,3 @@
   cp = cherry-pick
   lgo = log --all --graph --oneline --decorate
   pr = pull --rebase
-[include]
-  path = ~/.gitconfig.platform
-

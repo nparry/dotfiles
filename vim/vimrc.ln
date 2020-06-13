@@ -10,7 +10,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " My bundles
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
 
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'kchmck/vim-coffee-script'
@@ -43,9 +43,15 @@ let g:netrw_dirhistmax = 0
 
 " Color scheme
 syntax enable
-let g:solarized_termcolors=256
-set background=light
-colorscheme solarized
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set t_Co=256
+
+set termguicolors
+let g:gruvbox_italic=1
+set background=dark
+colorscheme gruvbox
 
 " Airline (for the status bar)
 let g:airline_powerline_fonts=1
